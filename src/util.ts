@@ -106,7 +106,8 @@ export async function fetchTextChannelData(channel: TextChannel | NewsChannel, o
                                 attachment: a.url
                             };
                         }),
-                        pinned: msg.pinned
+                        pinned: msg.pinned,
+                        createdAt: msg.createdAt
                     });
                 });
             }
